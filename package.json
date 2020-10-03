@@ -1,4 +1,5 @@
 {
+	"publisher":"huweicai",
 	"name": "awk",
 	"displayName": "AWK",
 	"description": "Run awk on VSCode",
