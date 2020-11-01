@@ -1,41 +1,39 @@
 {
-	"publisher":"huweicai",
-	"name": "awk",
-	"displayName": "AWK",
-	"description": "Run awk on VSCode",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.49.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:awk.awk"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "awk.awk",
-				"title": "Rune awk on current file."
-			}
-		]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.49.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.0",
-		"@types/node": "^12.11.7",
-		"eslint": "^7.9.0",
-		"glob": "^7.1.6",
-		"mocha": "^8.1.3",
-		"typescript": "^4.0.2",
-		"vscode-test": "^1.4.0"
-	}
+  "publisher": "huweicai",
+  "name": "awk",
+  "displayName": "AWK",
+  "description": "Run awk on VSCode",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:awk.awk",
+    "onCommand:awk.simple_print"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "awk.awk",
+        "title": "Run awk on slection or whole document."
+      },
+      {
+        "command": "awk.simple_print",
+        "title": "Run awk simple print mode on slection or whole document."
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.50.0",
+    "typescript": "^4.0.5"
+  }
 }
