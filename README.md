@@ -1,5 +1,5 @@
 # AWK VSCode Plugin
-(AWK)[https://en.wikipedia.org/wiki/AWK] is a great text processing command.
+[AWK](https://en.wikipedia.org/wiki/AWK) is a great text processing command.
 vscode-awk is extension for Visual Studio Code runs awk to edit text.
 
 ## AWK Required
